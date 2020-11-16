@@ -2,12 +2,21 @@
 
 1. set up the farbric test-network based on the instructions on https://hyperledger-fabric.readthedocs.io/en/release-2.2/test_network.html:
 
-    1.1 Navigate to the test network directory by using the following command: cd fabric-samples/test-network
-    1.2 From the directory bring up the network by using the command: ./network.sh up
-    1.3 create a channel: ./network.sh createChannel
+    1.1 Navigate to the test network directory by using the following command: 
+        
+        cd fabric-samples/test-network
+    1.2 From the directory bring up the network by using the command:
+        
+        ./network.sh up
+    1.3 create a channel:
+        
+        ./network.sh createChannel
     1.4 replace the /fabric-samples/chaincode/fabcar/javascript/lib/fabcar.js with the fabcar.js found in the chaincode folder of this repository
-    1.5 deploy the chaincode using: ./network.sh deployCC -l javascript
+    1.5 deploy the chaincode using:
+        
+        ./network.sh deployCC -l javascript
     1.6 run the following commands to set the configs:
+       
         export PATH=${PWD}/../bin:$PATH
         export FABRIC_CFG_PATH=$PWD/../config/
         # Environment variables for Org1
