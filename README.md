@@ -34,5 +34,9 @@
   --output /Users/myuser/Desktop/data/
 6. run  write_block.sh
 7. run convert_json.sh
-8. in the convert.ipnypb jupyter notebook, set the addresses: set "csv_path" for the address of the output file, set "file_dir" as the directory in which you used      to save the block files in convert_json.sh
+8. in the convert.ipnypb jupyter notebook, set the addresses: set "csv_path" for the address of the output file, set "file_dir" as the directory in which you used      to save the block files in convert_json.sh:
+
+        8.1 To install jupyter notebook use the command: pip install notebook
+        8.2 now you can run it by the following command: jupyter notebook
+
 9. use the csv file obtained from the script in Prom.
